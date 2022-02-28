@@ -71,6 +71,10 @@ const MainService = () => {
                 </Box>
                 <Box sx={{
                     padding: '30px',
+                    // background: '#FFFFFF',
+                    // borderRadius: '10px',
+                    // padding: '20px',
+                    // boxShadow: '0px 40px 50px rgb(0 113 220 / 10 %)'
                 }}>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={4}>
