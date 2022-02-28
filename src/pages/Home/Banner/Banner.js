@@ -36,7 +36,12 @@ const Banner = () => {
                         <Box>
                             <Typography sx={{ color: 'white' }} variant="body1" gutterBottom component="div"> World's Largest</Typography>
 
-                            <Typography sx={{ fontWeight: 'bold', color: 'white' }} variant="h3" gutterBottom component="div"> Search Doctor, Make an Appointment</Typography>
+                            <Typography sx={{
+                                fontWeight: 'bold',
+                                color: 'white',
+                                fontSize: { xs: '1.5rem', md: '3rem' }
+                            }}
+                                variant="h3" gutterBottom component="div"> Search Doctor, Make an Appointment</Typography>
 
                             <Typography sx={{ color: 'white' }} variant="body1" gutterBottom component="div"> Discover the best doctors, clinic & hospital the city nearest to you.</Typography>
 
@@ -123,7 +128,8 @@ const Banner = () => {
                                                 sx={{
                                                     backgroundColor: '#ffffff',
                                                     padding: '8px',
-                                                    borderRadius: '5px'
+                                                    borderRadius: '5px',
+                                                    width: '90%'
                                                 }}
                                                 id="input-with-icon-textfield"
                                                 placeholder="Search Location"
@@ -143,7 +149,8 @@ const Banner = () => {
                                                 sx={{
                                                     backgroundColor: '#ffffff',
                                                     padding: '8px',
-                                                    borderRadius: '5px'
+                                                    borderRadius: '5px',
+                                                    width: '100%'
                                                 }}
                                                 id="input-with-icon-textfield"
                                                 placeholder="Orthopadic"
@@ -166,57 +173,6 @@ const Banner = () => {
 
                                 </Box>
                             </Box>
-
-
-                            {/* <Grid
-                                sx={{
-                                    backgroundColor: '#ffffff',
-                                    boxShadow: '0px 0px 50px rgb(0 0 0 / 25%)',
-                                    borderRadius: '5px',
-                                    maxWidth: '850px',
-                                    marginTop: '30px',
-                                    spacing: '0',
-                                    padding: '10px'
-                                    // height: '50px'
-                                }}
-                                container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                                <Grid item xs={4}>
-                                    <TextField
-                                        id="input-with-icon-textfield"
-                                        placeholder="Search Location"
-                                        InputProps={{
-                                            disableUnderline: true,
-                                            startAdornment: (
-                                                <InputAdornment position="start">
-                                                    <ExploreIcon sx={{ fontSize: '40px' }} />
-                                                </InputAdornment>
-                                            ),
-                                        }}
-                                        variant="standard"
-                                    />
-                                </Grid>
-                                <Grid item xs={4}>
-                                    <TextField
-                                        id="input-with-icon-textfield"
-                                        placeholder="Orthopadic"
-                                        InputProps={{
-                                            disableUnderline: true,
-                                            startAdornment: (
-                                                <InputAdornment position="start">
-                                                    <AccountCircle sx={{ fontSize: '40px' }} />
-                                                </InputAdornment>
-                                            ),
-                                        }}
-                                        variant="standard"
-                                    />
-                                </Grid>
-                                <Grid item xs={4}>
-                                    <Box className='buttonContainer'>
-                                        <button class="slide">Slide</button>
-                                    </Box>
-                                </Grid>
-
-                            </Grid> */}
                         </Box>
 
                     </Grid>

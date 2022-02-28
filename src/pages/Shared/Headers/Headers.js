@@ -37,7 +37,7 @@ const Headers = () => {
 
     return (
         <AppBar position="static" style={{ background: '#FFFFFF' }}>
-            <Container >
+            <Container>
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
