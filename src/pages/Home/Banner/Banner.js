@@ -9,7 +9,7 @@ import { borderRadius, padding } from '@mui/system';
 const Banner = () => {
     return (
 
-        <div >
+        <div>
 
             <Grid item xs={12} md={12}>
                 <Box sx={{
@@ -34,7 +34,7 @@ const Banner = () => {
                         }}>
 
                         <Box>
-                            <Typography sx={{ color: 'white' }} variant="body1" gutterBottom component="div"> World's Largest</Typography>
+                            <Typography sx={{ color: 'white' }} variant="subtitle2" gutterBottom component="div"> World's Largest</Typography>
 
                             <Typography sx={{
                                 fontWeight: 'bold',
@@ -43,7 +43,7 @@ const Banner = () => {
                             }}
                                 variant="h3" gutterBottom component="div"> Search Doctor, Make an Appointment</Typography>
 
-                            <Typography sx={{ color: 'white' }} variant="body1" gutterBottom component="div"> Discover the best doctors, clinic & hospital the city nearest to you.</Typography>
+                            <Typography sx={{ color: 'white' }} variant="subtitle2" gutterBottom component="div"> Discover the best doctors, clinic & hospital the city nearest to you.</Typography>
 
                             {/* <Box sx={{
                                 backgroundColor: '#0C4072',

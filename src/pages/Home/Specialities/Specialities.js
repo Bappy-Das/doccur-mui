@@ -117,7 +117,7 @@ const Specialities = () => {
                                         }}>
                                             <img src={info.img} alt="" srcset="" />
                                         </Box>
-                                        <Typography className='title-name' fontWeight='bold' gutterBottom variant="body1" component="div">
+                                        <Typography className='title-name' fontWeight='bold' gutterBottom variant="body2" component="div">
                                             {info.title}
                                         </Typography>
                                         <button class="offer-Btn title-btn">Consult Now</button>

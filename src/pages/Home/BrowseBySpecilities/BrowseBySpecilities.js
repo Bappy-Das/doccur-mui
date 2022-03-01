@@ -113,7 +113,7 @@ const BrowseBySpecilities = () => {
                                             <Box className='browseSpecilities-name'>
                                                 <Typography sx={{
                                                     width: '100px'
-                                                }} fontWeight='bold' gutterBottom variant="body1" component="div">
+                                                }} fontWeight='bold' gutterBottom variant="subtitle2" component="div">
                                                     {info.title}
                                                 </Typography>
                                             </Box>

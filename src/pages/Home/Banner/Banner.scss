@@ -1,19 +1,23 @@
 // And from the left
 .slide:hover,
 .slide:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  box-shadow: inset 12em 0 0 0 var(--hover);
 }
 .offer-Btn:hover,
 .offer-Btn:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  box-shadow: inset 10em 0 0 0 var(--hover);
 }
 .doctor-Btn:hover,
 .doctor-Btn:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  box-shadow: inset 12em 0 0 0 var(--hover);
 }
 .patient-Btn:hover,
 .patient-Btn:focus {
-  box-shadow: inset 6.5em 0 0 0 var(--hover);
+  box-shadow: inset 12em 0 0 0 var(--hover);
+}
+.newsletter-Btn:hover,
+.newsletter-Btn:focus {
+  box-shadow: inset 14em 0 0 0 var(--hover);
 }
 
 
@@ -24,7 +28,9 @@ $colors: (
   slide: #ffffff, 
   offer-Btn:#ffffff,
   doctor-Btn:#ffffff,
-  patient-Btn:#10DEFD,
+  patient-Btn:#ffffff,
+  newsletter-Btn:#ffffff,
+
 );
 
 // Sass variables compile to a static string; CSS variables are dynamic and inherited
@@ -53,7 +59,7 @@ button {
   border: 1px solid #F2A54A;
   font: inherit;
   line-height: 1;
-  // width: 70%;
+  width: 70%;
   color: #fff;
   padding: 0.8em 2em;
   border-radius: 5px;
@@ -65,7 +71,7 @@ button {
   border: 1px solid #063B6F;
   font: inherit;
   line-height: 1;
-  // width: 70%;
+  width: 60%;
   color: #fff;
   padding: 0.8em 2em;
   border-radius: 5px;
@@ -77,7 +83,7 @@ button {
   border: 1px solid #10DEFD;
   font: inherit;
   line-height: 1;
-  // width: 70%;
+  width: 60%;
   color: #fff;
   padding: 0.8em 1em;
   border-radius: 5px;
@@ -85,12 +91,24 @@ button {
   cursor: pointer;
 }
 .patient-Btn {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
+  background-color: #10DEFD;
+  border: 1px solid #10DEFD;
   font: inherit;
   line-height: 1;
-  // width: 70%;
+  width: 60%;
   color: #0071DC;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.newsletter-Btn {
+  background-color: #10DEFD;
+  border: 1px solid #10DEFD;
+  font: inherit;
+  line-height: 1;
+  width: 20%;
+  color: #fff;
   padding: 0.8em 1em;
   border-radius: 5px;
   font-weight: bold;

@@ -98,7 +98,7 @@ const AvailableFeature = () => {
                                         </Box>
                                         <Typography sx={{
                                             mt: 5
-                                        }} className='title-name' fontWeight='bold' gutterBottom variant="body1" component="div">
+                                        }} className='title-name' fontWeight='bold' gutterBottom variant="subtitle2" component="div">
                                             {info.title}
                                         </Typography>
                                     </Box>

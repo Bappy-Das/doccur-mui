@@ -9,6 +9,8 @@ import MainService from './MainService/MainService';
 import Specialities from './Specialities/Specialities';
 import AvailablrFeature from './AvailableFeature/AvailableFeature';
 import BestDoctor from './BestDoctor/BestDoctor';
+import Newsletter from './Newsletter/Newsletter';
+import Footer from '../Shared/Footer/Footer';
 
 const Home = () => {
     return (
@@ -23,6 +25,8 @@ const Home = () => {
             <BrowseBySpecilities></BrowseBySpecilities>
             <BestDoctor></BestDoctor>
             <AvailablrFeature></AvailablrFeature>
+            <Newsletter></Newsletter>
+            <Footer></Footer>
         </div>
     );
 };
