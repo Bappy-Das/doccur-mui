@@ -120,7 +120,7 @@ const Specialities = () => {
                                         <Typography className='title-name' fontWeight='bold' gutterBottom variant="body1" component="div">
                                             {info.title}
                                         </Typography>
-                                        <button class="offer-Btn title-btn">Search</button>
+                                        <button class="offer-Btn title-btn">Consult Now</button>
                                     </Box>
                                 </Box>
                             </Grid>

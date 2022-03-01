@@ -7,13 +7,24 @@
 .offer-Btn:focus {
   box-shadow: inset 6.5em 0 0 0 var(--hover);
 }
+.doctor-Btn:hover,
+.doctor-Btn:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+.patient-Btn:hover,
+.patient-Btn:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
 
 //=== Set button colors
 // If you wonder why use Sass vars or CSS custom properties...
   // Make a map with the class names and matching colors
 $colors: (
   slide: #ffffff, 
-  offer-Btn:#ffffff
+  offer-Btn:#ffffff,
+  doctor-Btn:#ffffff,
+  patient-Btn:#10DEFD,
 );
 
 // Sass variables compile to a static string; CSS variables are dynamic and inherited
@@ -61,3 +72,28 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+.doctor-Btn {
+  background-color: #10DEFD;
+  border: 1px solid #10DEFD;
+  font: inherit;
+  line-height: 1;
+  // width: 70%;
+  color: #fff;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.patient-Btn {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  font: inherit;
+  line-height: 1;
+  // width: 70%;
+  color: #0071DC;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+

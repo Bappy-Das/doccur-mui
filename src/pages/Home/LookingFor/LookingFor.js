@@ -36,7 +36,7 @@ const LookingFor = () => {
                                     </Typography>
                                 </Box>
                                 <Box sx={{ p: 2 }}>
-                                    <button class="offer-Btn">Book Now</button>
+                                    <button class="doctor-Btn">Book Now</button>
                                 </Box>
                             </Box>
                         </Grid>
@@ -73,7 +73,7 @@ const LookingFor = () => {
                                     </Typography>
                                 </Box>
                                 <Box sx={{ p: 2 }}>
-                                    <button class="offer-Btn">Book Now</button>
+                                    <button class="patient-Btn">Book Now</button>
                                 </Box>
                             </Box>
                         </Grid>

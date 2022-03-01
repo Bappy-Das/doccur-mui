@@ -3,9 +3,12 @@ import Headers from '../Shared/Headers/Headers';
 // import HeadersDropdown from '../Shared/Headers/HeadersDropdown';
 
 import Banner from './Banner/Banner';
+import BrowseBySpecilities from './BrowseBySpecilities/BrowseBySpecilities';
 import LookingFor from './LookingFor/LookingFor';
 import MainService from './MainService/MainService';
 import Specialities from './Specialities/Specialities';
+import AvailablrFeature from './AvailableFeature/AvailableFeature';
+import BestDoctor from './BestDoctor/BestDoctor';
 
 const Home = () => {
     return (
@@ -17,6 +20,9 @@ const Home = () => {
             <MainService></MainService>
             <Specialities></Specialities>
             <LookingFor></LookingFor>
+            <BrowseBySpecilities></BrowseBySpecilities>
+            <BestDoctor></BestDoctor>
+            <AvailablrFeature></AvailablrFeature>
         </div>
     );
 };
