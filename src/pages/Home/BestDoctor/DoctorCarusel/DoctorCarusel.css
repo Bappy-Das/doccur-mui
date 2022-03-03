@@ -1,0 +1,51 @@
+.doctorimg{
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-next {
+    background-image: url('../../../../images/right-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    position: absolute;
+    margin-left: 400px;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+.swiper-button-prev {
+    background-image: url('../../../../images/arrow.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+    .swiper-button-prev::after{
+      display: none;
+    } 
+
+ 
+
+/* 
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 313px;
+    background-image: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    }
+    .swiper-button-prev {
+      position: absolute;
+      left: 158px;
+      background: url('../../../../images/arrow.png') no-repeat center center/contain;
+    }
+    .swiper-button-next {
+      position: absolute;
+      left: 1132px;
+      background: url('../../../../images/arrow.png') no-repeat center center/contain;
+    } */
+
