@@ -1,9 +1,6 @@
 import React from 'react';
-import { Box, Button, Container, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Rating, Typography } from '@mui/material';
+import { Box, Grid, Rating, Typography } from '@mui/material';
 
-import { GoLocation } from "react-icons/go";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsTelephone, BsFacebook, BsTwitter, BsLinkedin, BsInstagram } from "react-icons/bs";
 import FolderIcon from '@mui/icons-material/Folder';
 import './DoctorCarusel.css'
 
@@ -16,7 +13,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 // import required modules
-import { FreeMode, Navigation } from "swiper";
+import { Autoplay, FreeMode, Navigation } from "swiper";
 
 const doctorinfo = [
     {
@@ -62,8 +59,6 @@ const doctorinfo = [
 ]
 
 
-
-
 export default function DoctorCarusel() {
     return (
         <>
@@ -81,12 +76,14 @@ export default function DoctorCarusel() {
                         slidesPerView: 3,
                     },
                 }}
-                // slidesPerView={3}
                 spaceBetween={30}
                 freeMode={true}
-
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
-                modules={[FreeMode, Navigation]}
+                modules={[Autoplay, FreeMode, Navigation]}
                 className="mySwiper"
             >
                 <Grid container spacing={2}>
@@ -95,10 +92,11 @@ export default function DoctorCarusel() {
 
                             <Grid item xs={12} md={4}>
                                 <SwiperSlide>
-                                    <Box>
+                                    <Box sx={{
+                                        color: '#757575'
+                                    }}>
                                         <Box className='doc-img' sx={{
                                             background: '#FFFFFF',
-                                            // boxShadow: '0px 0px 10px rgb(0 0 0 / 11%)',
                                             borderRadius: '5px',
                                             minWidth: '100%',
                                             height: '100%',
@@ -120,14 +118,16 @@ export default function DoctorCarusel() {
                                             <Typography variant="body2" gutterBottom component="div">
                                                 MBBS, MD - General Medicine, DNB - Cardiology
                                             </Typography>
-                                            <Rating name="read-only" value={5} readOnly />
 
                                             <Box sx={{
-                                                display: 'flex'
+                                                display: 'flex',
+                                                alignContent: 'center',
+                                                my: 2
+                                                // justifyContent: 'center'
                                             }}>
-                                                <FolderIcon />
+                                                <Rating name="read-only" value={5} readOnly />
                                                 <Typography variant="body2" gutterBottom component="div">
-                                                    Georgia, USA
+                                                    (17)
                                                 </Typography>
                                             </Box>
                                             <Box sx={{
@@ -143,15 +143,24 @@ export default function DoctorCarusel() {
                                             }}>
                                                 <FolderIcon />
                                                 <Typography variant="body2" gutterBottom component="div">
-                                                    Georgia, USA
+                                                    Available on Fri, 22 Mar
                                                 </Typography>
                                             </Box>
                                             <Box sx={{
                                                 display: 'flex'
                                             }}>
-                                                <Button variant="contained">Contained</Button>
-                                                <Button variant="contained">Contained</Button>
-
+                                                <FolderIcon />
+                                                <Typography variant="body2" gutterBottom component="div">
+                                                    $300-$500
+                                                </Typography>
+                                            </Box>
+                                            <Box sx={{
+                                                display: 'flex',
+                                                justifyContent: 'space-evenly',
+                                                padding: '10px'
+                                            }}>
+                                                <Box className='doctor-btn'><span className='btn-text'>View Profile</span></Box>
+                                                <Box className='doctor-btn'><span className='btn-text'>Book Now</span></Box>
                                             </Box>
 
                                         </Box>

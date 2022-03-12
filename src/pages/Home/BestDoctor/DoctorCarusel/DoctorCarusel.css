@@ -49,3 +49,49 @@
       background: url('../../../../images/arrow.png') no-repeat center center/contain;
     } */
 
+
+.doctor-btn{
+  height: 40px;
+  width: 100px;
+  border: 2px solid #0DE0FE;
+  color: #0DE0FE;
+  border-radius: 5px;
+  background-color: #F8FCFF;
+  margin-bottom: '20px';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: 'center';
+  font-weight: 500;
+  margin: 5px;
+	position: relative;
+  cursor: pointer;
+	z-index: 1;
+}
+.doctor-btn::after{
+  content: "";
+	background-color: #0DE0FE;
+  color: #ffffff;
+	position: absolute;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	-webkit-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+	z-index: -1;
+}
+.doctor-btn:hover::after{
+  height: 100%;
+  
+}
+.doctor-btn:hover{
+  color: #ffffff;
+}
+/* .doctor-btn .btn-text:hover{
+  color: #ffffff;
+} */
+
+
+

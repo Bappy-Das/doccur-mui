@@ -42,17 +42,7 @@ const BestDoctor = () => {
                         <Grid item xs={12} md={8}>
                             <Box>
 
-
                                 <DoctorCarusel></DoctorCarusel>
-
-
-
-
-
-
-
-
-
 
                             </Box>
                         </Grid>
